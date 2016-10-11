@@ -5,6 +5,7 @@ import { Scene, Router } from 'react-native-router-flux'
 
 // Scenes AKA app views
 import SceneOne from '../components/sceneOne'
+import GifSearch from '../containers/gifSearchContainer'
 
 // App router
 class NavigationRouter extends Component {
@@ -17,7 +18,8 @@ class NavigationRouter extends Component {
     return (
       <Router>
         <Scene key="root">
-          <Scene initial={true} key='sceneOne' component={SceneOne} title='Scene One'></Scene>
+          <Scene key='sceneOne' component={SceneOne} title='Scene One'></Scene>
+          <Scene initial={true} key='GifSearch' component={GifSearch} title='Giphy Search'></Scene>
         </Scene>
       </Router>
     )
