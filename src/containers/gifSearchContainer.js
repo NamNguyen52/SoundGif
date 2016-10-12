@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
 
 const mapStateProps = (state) => {
   return {
-
+    // TODO: Once action dispatch created for giphy search results, connect giphyreducer to this container
   }
 };
 

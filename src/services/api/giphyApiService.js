@@ -12,7 +12,7 @@ const search = (searchTerm, cb) => {
       cb(gifs);
     })
     .catch((err) => {
-      if (err) { console.log(err) }
+      cb(null, err)
     })
 };
 
