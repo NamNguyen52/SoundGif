@@ -3,9 +3,7 @@ import { put } from 'redux-saga/effects';
 import Giphy from '../services/api/giphyApiService';
 
 function* searchGiphy(action) {
-  console.log(action.searchTerm);
-  // TODO: Create service to search giphy API with user input
-  // let searchResults = Giphy.search();
+  Giphy.search(action.searchTerm, gifs => console.log(gifs))
 }
 
 export function* watchGihpySearch() {
