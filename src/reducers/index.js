@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import TestReducer from './testReducer';
-import GiphyReducer from '.giphyReducer';
+import GiphyReducer from './giphyReducer';
 
 const rootReducer = combineReducers({
   testReducer: TestReducer,

@@ -5,7 +5,7 @@ import { createReducer } from 'reduxsauce'
 const INITIAL_STATE = Immutable({ results: [] })
 
 const updateGifSearchResults = (state, action) =>
-  state.set("results", actions.gifs)
+  state.set("results", action.searchResults)
 
 const ACTION_HANDLERS = {
   [Types.UPDATE_GIF_SEARCH_RESULTS]: updateGifSearchResults
